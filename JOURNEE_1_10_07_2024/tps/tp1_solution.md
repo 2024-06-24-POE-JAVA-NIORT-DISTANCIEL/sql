@@ -22,6 +22,25 @@ VALUES
     ('Durand', 'Pierre', 'Marseille', 'Développeur', 3500),
     ('Leclerc', 'Julie','Lille', 'Assistant administratif', 2800),
     ('Lefevre', 'Thomas','Toulouse', 'Développeur', 4000);
-```
 
-### Le reste c'est pour demain :D :D
+-- 5. Sélection de tous les enregistrements de la table Employes
+SELECT * FROM Employes;
+
+-- 6. Sélection des employés dont le poste est "Manager"
+SELECT * FROM Employes WHERE poste = 'Manager';
+
+-- 7. Sélection des employés dont le salaire est supérieur à 5000
+SELECT * FROM Employes WHERE salaire > 5000;
+
+-- 8. Modification du poste d'un employé spécifique
+UPDATE Employes SET poste = 'Directeur' WHERE id = 1;
+
+-- 9. Suppression d'un employé spécifique de la table
+DELETE FROM Employes WHERE id = 5;
+
+-- 10. Suppression de la table Employes
+DROP TABLE Employes;
+
+-- Suppression de la base de données GestionEmployes
+DROP DATABASE GestionEmployes;
+```
